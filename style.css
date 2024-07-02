@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 213px;
+  height: 78px;
+}
+.cabeza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+p {
+  font-size: 15px;
+}
+.corto {
+  width: 1263px;
+  height: 706px;
+}
+.cortometraje,
+.escenas,
+.personajes {
+  width: 359px;
+height: 250px;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+ .polipri {
+    text-align: center; 
+  }
+  .polipri p {
+    display: inline-block;
+    margin: 0;
+  }
+
+ .polipri p + p::before {
+   content: " │ "; 
+   }
+.contact,
+.empresa {
+  text-align: center;
+}
+.divisiones {
+  margin-top: 200px;
+}
