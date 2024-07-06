@@ -7,6 +7,13 @@
   width: 213px;
   height: 78px;
 }
+.sigcorto:hover {
+ cursor: pointer;
+}
+.sigcorto:active {
+   background-color: #F333;
+  color: white;
+}
 .cabeza {
   display: flex;
   justify-content: space-between;
