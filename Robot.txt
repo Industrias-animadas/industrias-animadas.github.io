@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /index.html
+Disallow: /CORTOS.html
+Disallow: /PUBLICIDAD
+Disallow: /TRABAJA CON NOSOTROS
