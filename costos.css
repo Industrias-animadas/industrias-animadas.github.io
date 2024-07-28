@@ -1,0 +1,43 @@
+* {
+   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo2 {
+   width: 213px;
+  height: 78px;
+}
+.cabeza2 {
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+p{
+  font-size: 15px;
+}
+.corto2 {
+  width: 1263px;
+  height: 706px;
+}
+.textocorto {
+  font-size: 200px;
+  color: white;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  margin-top: 150px;
+}
+.bienve1,
+.bienve2 {
+  font-size: 17.4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
