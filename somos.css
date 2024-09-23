@@ -26,13 +26,7 @@ p {font-size: 15px;}
   width: 1263px;
   height: 706px;
 }
-.qui {
-  font-size: 35px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
+
 .descr1,
 .descr2,
 .descr3,
@@ -50,6 +44,7 @@ p {font-size: 15px;}
   margin-left: 30px;
   margin-right: 30px;
 }
+.qui,
 .hist2022,
 .hist2023,
 .hist2024 {
