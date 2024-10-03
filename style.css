@@ -18,10 +18,12 @@
   width: 213px;
   height: 78px;
 }
-.sigcorto:hover {
+.sigcorto:hover,
+.sigsomos:hover {
  cursor: pointer;
 }
-.sigcorto:active {
+.sigcorto:active,
+.sigsomos:active {
    background-color: #F333;
   color: white;
 }
