@@ -14,6 +14,13 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+.sigsomos1:hover {
+ cursor: pointer;
+}
+.sigsomos1:active {
+   background-color: #F333;
+  color: white;
+}
 p{
   font-size: 15px;
 }
