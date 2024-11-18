@@ -7,10 +7,12 @@
   width: 213px;
   height: 78px;
 }
-.sigcorto1:hover {
+.sigcorto1:hover,
+.publicidad2:hover {
   cursor: pointer;
 }
-.sigcorto1:active {
+.sigcorto1:active,
+.publicidad2:active {
   background-color: #F333;
   color: white;
 }
