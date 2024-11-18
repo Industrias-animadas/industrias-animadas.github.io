@@ -19,11 +19,13 @@
   height: 78px;
 }
 .sigcorto:hover,
-.sigsomos:hover {
+.sigsomos:hover,
+.publicidad:hover {
  cursor: pointer;
 }
 .sigcorto:active,
-.sigsomos:active {
+.sigsomos:active,
+.publicidad:active {
    background-color: #F333;
   color: white;
 }
