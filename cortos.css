@@ -14,10 +14,12 @@
   margin-left: 15px;
   margin-right: 15px;
 }
-.sigsomos1:hover {
+.sigsomos1:hover,
+.publicidad1:hover {
  cursor: pointer;
 }
-.sigsomos1:active {
+.sigsomos1:active
+.publicidad1:active {
    background-color: #F333;
   color: white;
 }
