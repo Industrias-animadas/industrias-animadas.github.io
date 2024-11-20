@@ -18,7 +18,7 @@
 .publicidad1:hover {
  cursor: pointer;
 }
-.sigsomos1:active
+.sigsomos1:active,
 .publicidad1:active {
    background-color: #F333;
   color: white;
