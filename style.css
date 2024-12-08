@@ -125,4 +125,28 @@ height: auto;
  .logo {
         width: 50%;
     }
+   .images {
+        gap: 20px;
+    }
+    .images figure {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .images figure img {
+        width: 100%;
+        height: auto;
+    }
+    .images figure p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+.cortome,
+.escena,
+.personaj {
+    margin-top: 20px;
+        
+    }
+    
+}
 }
