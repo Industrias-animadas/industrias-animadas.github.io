@@ -44,9 +44,54 @@ body {
   align-items: center;
   padding: 15px;
   flex-wrap: wrap;
+   position: relative;
 }
 .cabeza p {
   font-size: 15px;
+}
+#menu-checkbox {
+  display: none;
+}
+.menu-hamburguesa {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+.barra {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+.menu-links {
+  display: flex; 
+  align-items: center;
+  justify-content: flex-end;
+}
+#menu-checkbox:checked + .menu-hamburguesa + .menu-links { 
+  display: flex; 
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+#menu-checkbox:checked + .menu-hamburguesa { 
+  
+}
+
+.menu-links p {
+  font-size: 15px;
+  margin-left: 20px;
 }
 
 .corto {
@@ -94,9 +139,46 @@ height: auto;
 
 @media screen and (max-width: 768px) {
 .cabeza {
-        flex-direction: column;
-        text-align: center;
+        justify-content: space-between;
     }
+  .menu-hamburguesa {
+    display: flex;
+  }
+
+  .menu-links {
+    display: none; /* Oculta los enlaces del menú en pantallas móviles por defecto */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .menu-links p {
+    margin-left: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-links p:last-child {
+    border-bottom: none;
+  }
+  .cabeza p {
+    margin-left: 0;
+  }
+
+  #menu-checkbox:checked + .menu-hamburguesa + .menu-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 15;
+    margin-top: 50px; /* Ajuste aquí el margen superior si es necesario */
+  }
+
     .images {
         flex-direction: column;
         align-items: center;
