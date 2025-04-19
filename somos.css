@@ -31,6 +31,56 @@ body {
 }
 p {font-size: 15px;}
 
+#menu-checkbox1 {
+  display: none;
+}
+.menu-hamburguesa1 {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.barra1 {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+.menu-links1 {
+  display: flex; /* Para pantallas grandes se muestra como fila */
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#menu-checkbox1:checked + .menu-hamburguesa1 + .menu-links1 { 
+  display: flex; /* Muestra el menú desplegable */
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+#menu-checkbox1:checked + .menu-hamburguesa1 { /* Opcional: Cambia el estilo del hamburguesa cuando está activo */
+  /* Puedes añadir estilos aquí para cambiar el icono hamburguesa */
+}
+
+.menu-links1 p {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+
+
 .portada1 {
    width: 100%;
   max-width: 1263px;
@@ -129,9 +179,54 @@ p {font-size: 15px;}
   margin-right: 143px;
 }
 @media screen and (max-width: 768px) {
+  main > section:first-child {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      position: relative; 
+      text-align: center; 
+    
   .cabeza1 {
     flex-direction: column;
         text-align: center;
+  }
+    .menu-hamburguesa1 {
+    display: flex;
+  }
+
+  .menu-links1 {
+    display: none; /* Oculta los enlaces del menú en pantallas móviles por defecto */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .menu-links1 p {
+    margin-left: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-links1 p:last-child {
+    border-bottom: none;
+  }
+    .cabeza1 p {
+    margin-left: 0;
+  }
+
+  #menu-checkbox1:checked + .menu-hamburguesa1 + .menu-links1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 15;
+    margin-top: 50px;
   }
   images {
      flex-direction: column;
@@ -171,6 +266,14 @@ p {font-size: 15px;}
     }
 }
 @media screen and (max-width: 480px) {
+  main > section:first-child { 
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       text-align: center;
+   }
   .logo3 {
     width: 50%;
   }
