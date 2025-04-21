@@ -186,7 +186,7 @@ p {font-size: 15px;}
       align-items: center; 
       position: relative; 
       text-align: center; 
-    
+     }
   .cabeza1 {
     flex-direction: column;
         text-align: center;
