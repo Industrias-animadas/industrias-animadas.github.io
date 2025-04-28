@@ -187,8 +187,7 @@ p {font-size: 15px;}
       text-align: center; 
      }
   .cabeza1 {
-    flex-direction: column;
-        text-align: center;
+   justify-content: space-between;
   }
     .menu-hamburguesa1 {
     display: flex;
