@@ -194,7 +194,7 @@ p {font-size: 15px;}
   }
 
   .menu-links1 {
-    display: none; /* Oculta los enlaces del menú en pantallas móviles por defecto */
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
@@ -224,7 +224,7 @@ p {font-size: 15px;}
     text-align: center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 15;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   images {
      flex-direction: column;
