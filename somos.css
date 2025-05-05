@@ -28,6 +28,7 @@ body {
   align-items: center;
   padding: 15px;
   flex-wrap: wrap;
+   position: relative;
 }
 p {font-size: 15px;}
 
