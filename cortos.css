@@ -8,8 +8,9 @@ body {
     line-height: 1.6;
 }
 .logo2 {
-   width: 213px;
-  height: 78px;
+ width: 60%;
+  max-width: 213px;
+  height: auto;
 }
 .sigsomos1:hover,
 .publicidad1:hover {
@@ -23,15 +24,17 @@ body {
 }
 
 .cabeza2 {
-  display: flex;
+ display: flex;
   justify-content: space-between;
    align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
+ padding: 15px;
+  flex-wrap: wrap;
+  position: relative
 }
 
 .cabeza2 p{
-  font-size: 15px;
+font-size: 15px;
+  margin-left: 20px;
 }
 #menu-checkbox2 {
   display: none;
@@ -82,8 +85,9 @@ body {
 }
 
 .corto2 {
-  width: 1263px;
-  height: 706px;
+   width: 100%;
+  max-width: 1263px;
+  height: auto;
 }
 .textocorto {
   font-size: 200px;
