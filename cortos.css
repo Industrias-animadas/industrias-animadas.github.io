@@ -7,6 +7,19 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+
+.textocorto {
+  font-size: 10vw;
+  color: white;
+  position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+   z-index: 10;
+  margin-top: 150px;
+}
 .logo2 {
  width: 60%;
   max-width: 213px;
@@ -30,12 +43,11 @@ body {
  padding: 15px;
   flex-wrap: wrap;
   position: relative
-   z-index: 12;
+  
 }
 
 .cabeza2 p{
 font-size: 15px;
-  margin-left: 20px;
 }
 #menu-checkbox2 {
   display: none;
@@ -90,18 +102,7 @@ font-size: 15px;
   max-width: 1263px;
   height: auto;
 }
-.textocorto {
-  font-size: 200px;
-  color: white;
-  position: absolute;
-   z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-  margin-top: 150px;
-}
+
 .bienve1,
 .bienve2 {
   font-size: 17.4px;
