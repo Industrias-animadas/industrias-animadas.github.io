@@ -133,3 +133,79 @@ p
 .divisiones2 {
   margin-top: 200px;
 }
+
+
+@media screen and (max-width: 768px) {
+  main>section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .cabeza4 {
+    justify-content: space-between;
+  }
+
+  .menu-hamburguesa3 {
+    display: flex;
+  }
+
+  .menu-links3 {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .menu-links3 p {
+    margin-left: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-links3 p:last-child {
+    border-bottom: none;
+  }
+
+  .cabeza4 p {
+    margin-left: 0;
+  }
+
+  #menu-checkbox3:checked+.menu-hamburguesa3+.menu-links3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 15;
+    margin-top: 50px;
+  }
+
+  
+}
+
+@media screen and (max-width: 480px) {
+  main>section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+
+  
+
+  .logo4 {
+    width: 50%;
+  }
+
+}
