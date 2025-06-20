@@ -36,7 +36,9 @@ body {
 p 
 {
   font-size: 15px;
+   margin-left: 20px;
 }
+
 #menu-checkbox3 {
   display: none;
 }
@@ -66,9 +68,7 @@ p
 }
 
 #menu-checkbox3:checked+.menu-hamburguesa3+.menu-links3 {
-  /* Selector complejo! */
   display: flex;
-  /* Muestra el menú desplegable */
   flex-direction: column;
   position: absolute;
   top: 100%;
