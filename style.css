@@ -191,18 +191,49 @@ main > section:first-child {
     .images {
         flex-direction: column;
         align-items: center;
+       gap: 15px; 
+          padding-left: 15px; 
+          padding-right: 15px;
     }
     .cortometrajes,
     .escenas,
     .personajes {
     {
-        width: 90%;
-        max-width: none;
+        width: 100%;     
+          max-width: 380px; 
+          margin-left: auto; 
+          margin-right: auto;
+          text-align: center;
     }
-     .titulo {
-        font-size: 5rem;
-        margin-top: 20%;
-    }
+  .images .cortometraje, 
+      .images .escenas,    
+      .images .personajes {  
+          width: 100%;      
+          max-width: 100%;  
+          height: auto;
+          display: block;    
+          border-radius: 8px;
+          margin-bottom: 8px;/
+      }
+
+      .images figure {
+          width: 100%;
+          margin-bottom: 8px; // Espacio entre figure (imagen) y el <p>
+      }
+      .images figure img {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 8px;
+      }
+      */
+
+      .images p { 
+          font-size: 0.9rem;
+          color: #333;    
+          line-height: 1.4; 
+      }
+  
    .titulo {
       position: absolute; 
       top: 50%;      
