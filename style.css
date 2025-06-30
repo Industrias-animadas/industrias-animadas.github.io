@@ -198,7 +198,6 @@ main > section:first-child {
     .cortometrajes,
     .escenas,
     .personajes {
-    {
         width: 100%;     
           max-width: 380px; 
           margin-left: auto; 
@@ -226,7 +225,6 @@ main > section:first-child {
           display: block;
           border-radius: 8px;
       }
-      */
 
       .images p { 
           font-size: 0.9rem;
@@ -267,31 +265,5 @@ main > section:first-child {
       margin-top: 0; 
       font-size: 3rem; 
     }
- .logo {
-        width: 50%;
-    }
-   .images {
-        gap: 20px;
-    }
-    .images figure {
-        width: 90%;
-        max-width: 350px;
-    }
-
-    .images figure img {
-        width: 100%;
-        height: auto;
-    }
-    .images figure p {
-        margin-top: 10px;
-        font-size: 1rem;
-    }
-.cortome,
-.escena,
-.personaj {
-    margin-top: 20px;
-        
-    }
-    
-}
+  
 }
