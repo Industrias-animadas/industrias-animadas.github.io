@@ -1,5 +1,13 @@
+# Permite el rastreo de todo el sitio a todos los bots.
 User-agent: *
-Allow: /index.html
-Disallow: /CORTOS.html
-Disallow: /PUBLICIDAD
-Disallow: /TRABAJA CON NOSOTROS
+Disallow:
+
+# Ubicación del mapa del sitio (Sitemap).
+Sitemap: https://industrias-animadas.github.io/sitemap.xml
+
+#User-agent: *
+#Allow: /index.html
+#Disallow: /CORTOS.html
+#Disallow: /PUBLICIDAD
+#Disallow: /TRABAJA CON NOSOTROS
+
