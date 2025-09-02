@@ -348,4 +348,35 @@ p {font-size: 15px;}
      width: 100%;
         height: auto;
   }
+  .smart {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .hzonte24 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0 15px;
+    margin: 25px auto;
+    max-width: 350px;
+      }
+
+  .huevo2024,
+  .pulpo2024,
+  .tablet2024,
+  .compu2024 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+   .smart img,
+    .hzonte24 figure img {
+        width: 100%;    /* La imagen siempre llena su contenedor <figure> */
+        height: auto;
+        display: block; /* Buena práctica para eliminar espacios extra */
+      border-radius: 8px;
+    }
 }
