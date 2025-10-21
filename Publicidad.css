@@ -26,7 +26,7 @@ body {
 .menu-links3 {
   display: flex;
   align-items: center;
-  gap: 20px; /* Espacio entre los elementos del menú */
+  gap: 20px;
 }
 
 .menu-links3 p,
@@ -144,7 +144,9 @@ body {
   .content-section {
     flex-direction: row;  
     align-items: stretch; 
-    gap: 40px;           
+    gap: 40px;    
+     flex-shrink: 0; 
+    max-width: none;
   }
 
   .content-image {
@@ -164,19 +166,41 @@ body {
     align-items: center; 
     
   }
+    .menu-hamburguesa3 {
+    display: flex;
+  }
+
+  .menu-links3 {
+    display: none;
+  }
+
+  #menu-checkbox3:checked ~ .menu-links3 {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    text-align: center;
+  }
+
+  .menu-links3 p, .menu-links3 a {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .menu-links3 p:last-child {
+      border-bottom: none;
+  }
 }
 
 
 @media screen and (max-width: 480px) {
-  main>section:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
 
-  }
 
 
   .logo4 {
