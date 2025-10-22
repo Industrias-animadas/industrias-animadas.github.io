@@ -40,7 +40,6 @@ body {
 .sigsomos4:hover,
 .sigcorto4:hover {
   cursor: pointer;
-  /* Puedes añadir un efecto visual aquí, como un subrayado o cambio de color */
   text-decoration: underline;
 }
 
