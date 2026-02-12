@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+      line-height: 1.6; que el contenido resalte */
+}
+
+.logo-container {
+    width: 100%;
+    background-color: white;
+    text-align: center; /* Centra el logo */
+    padding: 10px 0;
+}
+
+.logo6 {
+     width: 60%;
+      max-width: 213px;
+      height: auto;
+}
+
+.blue-nav-bar {
+    width: 100%;
+    background-color: #3b5998; /* COLOR AZUL DE LA CAJA */
+    min-height: 60px; /* Altura mínima para la franja */
+    display: flex;
+    justify-content: center; /* Centra los links en escritorio */
+    align-items: center;
+    position: relative; /* Para posicionar el desplegable móvil */padding: 0 20px;
+}
+
+.menu-links4 {
+  display: flex; 
+    flex-wrap: wrap
+  justify-content: center;
+    gap: 40px
+}
+
+#menu-checkbox4:checked + .menu-hamburguesa4 + .menu-links4 { 
+  display: flex; 
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+#menu-checkbox4:checked + .menu-hamburguesa4 { 
+}
+
+.menu-links4 p {
+    color: white; /* AQUÍ ESTÁ EL COLOR BLANCO */
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: opacity 0.3s;
+}
+
+.menu-links4 p:hover {
+    opacity: 0.8; /* Efecto sutil al pasar el mouse */
+}
+
+#menu-checkbox4 {
+  display: none;
+}
+
+.menu-hamburguesa4 {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 10;
+    margin-left: 15px;
+}
+
+.barra4 {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+} 
+.privacidad,
+.alcance {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.politica {
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+/* --- 3. ESTILOS PARA ESCRITORIO (PANTALLAS > 992px) --- */
+@media screen and (max-width: 768px) {
+.blue-nav-bar {
+        justify-content: flex-start; /* Alinea el icono a la izquierda */
+        padding: 10px 0;
+    }
+
+    /* Mostrar la Hamburguesa */
+    .menu-hamburguesa4 {
+        display: flex;
+    }
+
+    /* Ocultar los links por defecto en móvil */
+    .menu-links4 {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Se despliega justo debajo de la barra azul */
+        left: 0;
+        background-color: #f9f9f9; /* Fondo gris claro para el desplegable */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+
+    /* Estilos de los links dentro del desplegable móvil */
+    .menu-links4 p {
+        color: black; /* Texto negro dentro del desplegable */
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    /* Lógica para mostrar el menú al hacer check */
+    #menu-checkbox4:checked ~ .menu-links4 {
+        display: flex;
+    }
+}
