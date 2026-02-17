@@ -28,13 +28,15 @@ body {
 
 .sigcorto:hover,
 .sigsomos:hover,
-.publicidad:hover {
+.publicidad:hover,
+.privacidad:hover {
  cursor: pointer;
 }
 
 .sigcorto:active,
 .sigsomos:active,
-.publicidad:active {
+.publicidad:active,
+.privacidad:acitve {
    background-color: #F333;
   color: white;
 }
