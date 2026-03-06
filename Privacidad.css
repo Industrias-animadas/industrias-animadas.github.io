@@ -131,7 +131,14 @@ body {
     margin-right: 30px;
   }
 
-/* --- 3. ESTILOS PARA ESCRITORIO (PANTALLAS > 992px) --- */
+p 
+{font-size: 18px;
+text-align: justify;
+margin-left: 30px;
+margin-right: 30px;
+ margin-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
 .blue-nav-bar {
         justify-content: flex-start; /* Alinea el icono a la izquierda */
