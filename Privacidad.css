@@ -22,6 +22,24 @@ body {
       height: auto;
 }
 
+.privacidad2:hover,
+.seguridad2:hover,
+.controles2:hover,
+.recurso2:hover,
+.contacto2:hover
+{
+    cursor: pointer;
+}
+
+.privacidad2:active,
+.seguridad2:active,
+.controles2:active,
+.recurso2:active,
+.contacto2:active {
+    background-color: #F333;
+    color: white;
+}
+
 .blue-nav-bar {
     width: 100%;
     background-color: #3b5998; /* COLOR AZUL DE LA CAJA */
