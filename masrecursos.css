@@ -16,7 +16,7 @@ body {
   padding: 10px 0;
 }
 
-.logo6 {
+.logo7 {
    width: 60%;
     max-width: 213px;
     height: auto;
@@ -32,33 +32,33 @@ body {
   position: relative; /* Para posicionar el desplegable móvil */padding: 0 20px;
 }
 
-.privacidad3:hover,
-.seguridad3:hover,
-.controles3:hover,
-.recientes3:hover,
-contacto3:hover
+.privacidad4:hover,
+.seguridad4:hover,
+.controles4:hover,
+.recientes4:hover,
+contacto4:hover
 {
   cursor: pointer;
 }
 
-.privacidad3:active,
-.seguridad3:active,
-.controles3:active,
-.recientes3:active,
-contacto3:active
+.privacidad4:active,
+.seguridad4:active,
+.controles4:active,
+.recientes4:active,
+contacto4:active
 {
   background-color: #F333;
   color: white
 }
 
-.menu-links4 {
+.menu-links5 {
 display: flex; 
   flex-wrap: wrap
 justify-content: center;
   gap: 40px
 }
 
-#menu-checkbox4:checked + .menu-hamburguesa4 + .menu-links4 { 
+#menu-checkbox4:checked + .menu-hamburguesa4 + .menu-links5 { 
 display: flex; 
 flex-direction: column;
 position: absolute;
@@ -75,7 +75,7 @@ z-index: 5;
 #menu-checkbox4:checked + .menu-hamburguesa4 { 
 }
 
-.menu-links4 p {
+.menu-links5 p {
   color: white; /* AQUÍ ESTÁ EL COLOR BLANCO */
   font-size: 16px;
   margin: 0;
@@ -85,7 +85,7 @@ z-index: 5;
   transition: opacity 0.3s;
 }
 
-.menu-links4 p:hover {
+.menu-links5 p:hover {
   opacity: 0.8; /* Efecto sutil al pasar el mouse */
 }
 
@@ -111,7 +111,7 @@ background-color: white;
 border-radius: 5px;
 }
 
-.privacy-container {
+.privacy-container2 {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
@@ -182,7 +182,7 @@ margin-right: 50px;
   }
 
   /* Ocultar los links por defecto en móvil */
-  .menu-links4 {
+  .menu-links5 {
       display: none;
       flex-direction: column;
       width: 100%;
@@ -195,7 +195,7 @@ margin-right: 50px;
   }
 
   /* Estilos de los links dentro del desplegable móvil */
-  .menu-links4 p {
+  .menu-links5 p {
       color: black; /* Texto negro dentro del desplegable */
       text-align: center;
       border-bottom: 1px solid #ddd;
@@ -206,7 +206,7 @@ margin-right: 50px;
 }
 
   /* Lógica para mostrar el menú al hacer check */
-  #menu-checkbox4:checked ~ .menu-links4 {
+  #menu-checkbox4:checked ~ .menu-links5 {
       display: flex;
   }
 }
